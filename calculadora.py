@@ -9,21 +9,27 @@ print("4.- Division")
 print("5.- Salir")
 
 option = int(input("Elije que deseas hacer: "))
-num1 = int(input("Elije el primer numero: "))
-num2 = int(input("Elije el segundo numero: "))
 
 if option == 1:
-    print(num1 + num2)
+    num1 = int(input("Elije el primer numero: "))
+    num2 = int(input("Elije el segundo numero: "))
+    print("Resultado:", num1 + num2)
 elif option == 2:
-    print(num1 - num2)
+    num1 = int(input("Elije el primer numero: "))
+    num2 = int(input("Elije el segundo numero: "))
+    print("Resultado:", num1 - num2)
 elif option == 3:
-    print(num1 * num2)
+    num1 = int(input("Elije el primer numero: "))
+    num2 = int(input("Elije el segundo numero: "))
+    print("Resultado:", num1 * num2)
 elif option == 4:
+    num1 = int(input("Elije el primer numero: "))
+    num2 = int(input("Elije el segundo numero: "))
     # Doble if para que no se pueda dividir entre 0
-    if num1 == 0 or num2 == 0:
+    if num2 == 0:
         print("No se puede dividir entre 0")
     else:
-        print(num1/num2)
+        print("Resultado:", num1/num2)
 elif option == 5:
     print("Hasta luego :))")
 else:
