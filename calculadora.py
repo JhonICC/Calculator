@@ -19,9 +19,14 @@ elif option == 2:
 elif option == 3:
     print(num1 * num2)
 elif option == 4:
-    print(num1 / num2)
+    # Doble if para que no se pueda dividir entre 0
+    if num1 == 0 or num2 == 0:
+        print("No se puede dividir entre 0")
+    else:
+        print(num1/num2)
 elif option == 5:
     print("Hasta luego :))")
 else:
     print("Introduce una opcion valida")
+
 
